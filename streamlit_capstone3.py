@@ -88,7 +88,7 @@ col1, col2 = st.columns(2)
 # Kiri
 with col1:
     st.subheader("Housing Features")
-    st.write(data_customer.transpose())
+    st.write(data_customer.transpose()).rename(columns={'0':'feature_value'}))
 
 # Load model
 with open('best_model_cat.pkl', 'rb') as f:
