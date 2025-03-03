@@ -91,7 +91,7 @@ with col1:
     st.write(data_customer.transpose())
 
 # Load model
-with open('best_model_cat.sav', 'rb') as f:
+with open('best_model_cat.pkl', 'rb') as f:
     model_loaded = pickle.load(f)
     
 # Predict to data
